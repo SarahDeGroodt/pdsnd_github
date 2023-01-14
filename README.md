@@ -39,9 +39,22 @@ Based on the user’s answer on above four questions, code has been written to p
 
 ### Files used
 Files used in this project are:
-    - a Python script called bikeshare.py
-    - three city dataset files called chicago.csv, new_york_city.csv and washington.csv
+- a Python script called bikeshare.py
+- three city dataset files called chicago.csv, new_york_city.csv and washington.csv
 
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Resource references used for writing the script in the file bikeshare.py:
+- Udacity - Data Analyst Nanodegree Program: Input from lessons in the "Introduction to Python" course.
+- https://stackoverflow.com/questions/50498557/input-prompt-within-a-while-true-loop
+- https://stackoverflow.com/questions/23294658/asking-the-user-for-input-until-they-give-a-valid-respons
+- https://stackoverflow.com/questions/60339049/weekday-name-from-a-pandas-dataframe-date-object
+- https://stackoverflow.com/questions/19377969/combine-two-columns-of-text-in-pandas-dataframe
+- https://www.mytecbits.com/internet/python/seconds-to-days-hours-minutes
+- https://stackoverflow.com/questions/41286569/get-total-of-pandas-column
+- https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.iterrows.html
+- https://stackoverflow.com/questions/16476924/how-to-iterate-over-rows-in-a-dataframe-in-pandas
+- https://stackoverflow.com/questions/7837722/what-is-the-most-efficient-way-to-loop-through-dataframes-with-pandas
+- https://stackoverflow.com/questions/1016814/what-should-i-do-with-unexpected-indent-in-python
+- http://net-informations.com/python/err/eol.htm#:~:text=An%20EOL%20(%20End%20of%20Line,the%20end%20of%20the%20line%20.
+- https://stackoverflow.com/questions/60214194/error-in-reading-stock-data-datetimeproperties-object-has-no-attribute-week
