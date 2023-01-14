@@ -59,3 +59,10 @@ Resource references used for writing the script in the file bikeshare.py:
 - https://stackoverflow.com/questions/1016814/what-should-i-do-with-unexpected-indent-in-python
 - http://net-informations.com/python/err/eol.htm#:~:text=An%20EOL%20(%20End%20of%20Line,the%20end%20of%20the%20line%20.
 - https://stackoverflow.com/questions/60214194/error-in-reading-stock-data-datetimeproperties-object-has-no-attribute-week
+
+Resource references used for creating this README.md file:
+- Udacity - Data Analyst Nanodegree Program: Input from lessons in the "Introduction to Version Control" course.
+- https://github.com/atom/markdown-preview
+- https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+- https://wordpress.com/support/markdown-quick-reference/
+- https://docs.github.com/en
