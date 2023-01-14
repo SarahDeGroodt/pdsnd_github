@@ -38,7 +38,10 @@ Based on the user’s answer on above four questions, code has been written to p
 
 
 ### Files used
-Include the files used
+Files used in this project are:
+    - a Python script called bikeshare.py
+    - three city dataset files called chicago.csv, new_york_city.csv and washington.csv
+
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
