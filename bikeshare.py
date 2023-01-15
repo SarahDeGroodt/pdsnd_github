@@ -31,7 +31,8 @@ def get_filters():
         if city in cities:
             break
         else:
-            print('\nInvalid input!\nPlease type "chicago" or "new york" or "washington".')
+            print('Invalid input!')
+            print('Please type "chicago" or "new york" or "washington".')
 
     # get user input for filtering the data by month, day or no filtering at all. Use a while loop to handle invalid inputs.
     while True:
@@ -39,7 +40,8 @@ def get_filters():
         if data_filter in data_filters:
             break
         else:
-            print('\nInvalid input!\nPlease type "month" or "day" or "both" or "none".')
+            print('Invalid input!')
+            print('Please type "month" or "day" or "both" or "none".')
 
     # in case the user choses to filter on month: get user input for month (all, january, february, ... , june). Use a while loop to handle invalid inputs.
     if data_filter == 'month' or data_filter == 'both':
@@ -48,7 +50,8 @@ def get_filters():
             if month in months:
                 break
             else:
-                print('\nInvalid input!\nPlease type "all" or "january" or "february" or "march" or "april" or "may" or "june".')
+                print('Invalid input!')
+                print('Please type "all" or "january" or "february" or "march" or "april" or "may" or "june".')
     else:
         month = 'all'
 
@@ -59,7 +62,8 @@ def get_filters():
             if day in days:
                 break
             else:
-                print('\nInvalid input!\nPlease type "all" or "monday" or "tuesday" or "wednesday" or "thursday" or "friday" or "saturday" or "sunday".')
+                print('Invalid input!')
+                print('Please type "all" or "monday" or "tuesday" or "wednesday" or "thursday" or "friday" or "saturday" or "sunday".')
     else:
         day = 'all'
 
@@ -146,8 +150,8 @@ def station_stats(df):
     print('\nThe most commonly used end station is: ', end_station)
 
     # display most frequent combination of start station and end station trip
-    popular_trip = 'from: ' + df['Start Station'] + ' - to: ' + df['End Station']
-    print('\nThe most popular trip is: ', popular_trip.mode()[0])
+    popular_trip = 'from "' + df['Start Station'] + '" to "' + df['End Station'] + '"'
+    print('\nThe most popular trip is', popular_trip.mode()[0])
 
 
     print('\nThis took %s seconds.' % (time.time() - start_time))
@@ -192,12 +196,12 @@ def user_stats(df):
 
     # display earliest, most recent, and most common year of birth
     if 'Birth Year' in df:
-        eby = df['Birth Year'].min()
-        mrby = df['Birth Year'].max()
-        mcby = df['Birth Year'].mode()[0]
-        print('\nThe earliest birth year is: ', int(eby))
-        print('\nThe most recent birth year is: ', int(mrby))
-        print('\nThe most common birth year is: ', int(mcby))
+        min_birthyear = df['Birth Year'].min()
+        max_birthyear = df['Birth Year'].max()
+        most_common_birthyear = df['Birth Year'].mode()[0]
+        print('\nThe earliest birth year is: ', int(min_birthyear))
+        print('\nThe most recent birth year is: ', int(max_birthyear))
+        print('\nThe most common birth year is: ', int(most_common_birthyear))
     else:
         print('\nNo birth year data available.')
 
