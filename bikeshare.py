@@ -31,7 +31,8 @@ def get_filters():
         if city in cities:
             break
         else:
-            print('\nInvalid input!\nPlease type "chicago" or "new york" or "washington".')
+            print('Invalid input!')
+            print('Please type "chicago" or "new york" or "washington".')
 
     # get user input for filtering the data by month, day or no filtering at all. Use a while loop to handle invalid inputs.
     while True:
@@ -39,7 +40,8 @@ def get_filters():
         if data_filter in data_filters:
             break
         else:
-            print('\nInvalid input!\nPlease type "month" or "day" or "both" or "none".')
+            print('Invalid input!')
+            print('Please type "month" or "day" or "both" or "none".')
 
     # in case the user choses to filter on month: get user input for month (all, january, february, ... , june). Use a while loop to handle invalid inputs.
     if data_filter == 'month' or data_filter == 'both':
@@ -48,7 +50,8 @@ def get_filters():
             if month in months:
                 break
             else:
-                print('\nInvalid input!\nPlease type "all" or "january" or "february" or "march" or "april" or "may" or "june".')
+                print('Invalid input!')
+                print('Please type "all" or "january" or "february" or "march" or "april" or "may" or "june".')
     else:
         month = 'all'
 
@@ -59,7 +62,8 @@ def get_filters():
             if day in days:
                 break
             else:
-                print('\nInvalid input!\nPlease type "all" or "monday" or "tuesday" or "wednesday" or "thursday" or "friday" or "saturday" or "sunday".')
+                print('Invalid input!')
+                print('Please type "all" or "monday" or "tuesday" or "wednesday" or "thursday" or "friday" or "saturday" or "sunday".')
     else:
         day = 'all'
 
